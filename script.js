@@ -1,4 +1,4 @@
-// Smooth scroll to sections
+// Smooth scroll navigation
 document.querySelectorAll("nav a").forEach(link => {
   link.addEventListener("click", e => {
     e.preventDefault();
@@ -7,5 +7,24 @@ document.querySelectorAll("nav a").forEach(link => {
   });
 });
 
+// Gallery modal
+const modal = document.createElement("div");
+modal.classList.add("modal");
+document.body.appendChild(modal);
+
+const modalImg = document.createElement("img");
+modal.appendChild(modalImg);
+
+document.querySelectorAll(".gallery-item").forEach(img => {
+  img.addEventListener("click", () => {
+    modalImg.src = img.src;
+    modal.style.display = "flex";
+  });
+});
+
+modal.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
 // Console Easter Egg
-console.log("🌹 Welcome to Lana Del Rey Fanpage - Made by a true fan!");
+console.log("🌹 Welcome to Lana Del Rey Fanpage - Made with love by Vivek!");
