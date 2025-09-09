@@ -1,22 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivek Modh | DevOps Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>🚀 Welcome to My Website</h1>
-    </header>
-    <main>
-        <p>This site is hosted on <strong>AWS S3</strong> and deployed using <strong>GitHub Actions</strong>.</p>
-        <button onclick="sayHello()">Click Me</button>
-    </main>
-    <footer>
-        <p>Made with ❤️ by Vivek</p>
-    </footer>
-    <script src="script.js"></script>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Vivek<span>Modh</span></div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Hi, I'm <span>Vivek</span></h1>
+      <p>Aspiring <strong>DevOps Engineer</strong> with GPU Data Center Experience</p>
+      <button onclick="scrollToSection('contact')">Hire Me</button>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I started my career as an AI Systems Engineer at a GPU Data Center, 
+      gaining hands-on expertise in hardware, networking, Linux, and automation.  
+      Now, I’m focused on <strong>DevOps & Cloud Engineering</strong> — building scalable systems, automating deployments, and ensuring infrastructure reliability.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-grid">
+      <div class="skill">⚙️ Linux / Ubuntu</div>
+      <div class="skill">🐳 Docker / Kubernetes</div>
+      <div class="skill">☁️ AWS / Cloud</div>
+      <div class="skill">📦 CI/CD (GitHub Actions, Jenkins)</div>
+      <div class="skill">🖧 Networking & Security</div>
+      <div class="skill">📊 Monitoring (Zabbix, Prometheus, Grafana)</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>🚀 GPU Server Monitoring</h3>
+        <p>Set up Zabbix and Prometheus to monitor GPU server clusters with alerting & dashboards.</p>
+      </div>
+      <div class="project-card">
+        <h3>🌱 Smart Irrigation System</h3>
+        <p>IoT project using Cisco Packet Tracer — automated irrigation with sensors and cloud integration.</p>
+      </div>
+      <div class="project-card">
+        <h3>📦 CI/CD Pipeline</h3>
+        <p>Implemented GitHub Actions pipeline for Dockerized web app with auto-deployment to AWS S3.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you’re looking for a motivated DevOps Engineer, let’s connect.</p>
+    <div class="contact-links">
+      <a href="mailto:vivekmodh03@gmail.com">📧 Email</a>
+      <a href="https://github.com/VivekModh" target="_blank">💻 GitHub</a>
+      <a href="https://linkedin.com/in/vivekmodh" target="_blank">🔗 LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Vivek Modh — Made with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
