@@ -31,66 +31,52 @@ section {
 */
 
 /* ---------- Header ---------- */
+/* ---------- Header ---------- */
 header {
   height: 100vh;
-  background: linear-gradient(rgba(42,61,102,0.7), rgba(0,0,0,0.7)),
+  /* ✅ Pink–Purple gradient aesthetic */
+  background: linear-gradient(135deg, #e78aff 0%, #ff99cc 50%, #c471ed 100%),
               url("https://i.pinimg.com/originals/3f/3c/90/3f3c9030bcf02027a94db541dd68f8ef.jpg") no-repeat center/cover;
+  background-blend-mode: overlay;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: white;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 10%;
-}
-
 nav .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #e8b4bc;
+  color: #fff0f6; /* Softer pastel */
 }
 
 nav .logo span {
-  color: #d4af37;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
+  color: #ffe066; /* pastel gold accent */
 }
 
 nav ul li a {
-  color: white;
+  color: #fff0f6;
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s;
 }
 
 nav ul li a:hover {
-  color: #e8b4bc;
-}
-
-.hero {
-  text-align: center;
-  margin-bottom: 100px;
+  color: #ffd6e0; /* soft pink hover */
 }
 
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 15px;
-  color: #e8b4bc;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+  color: #ffe6ff; /* light pastel lavender */
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: #f0f0f0;
+  color: #fff0f6;
 }
+
 
 /* ---------- Albums ---------- */
 .album-grid {
