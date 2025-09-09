@@ -7,6 +7,12 @@ document.querySelectorAll("nav a").forEach(link => {
   });
 });
 
+// Scroll indicator smooth scroll
+document.querySelector(".scroll-indicator")?.addEventListener("click", () => {
+  document.querySelector("#about").scrollIntoView({ behavior: "smooth" });
+});
+
+
 // Gallery modal
 const modal = document.createElement("div");
 modal.classList.add("modal");
