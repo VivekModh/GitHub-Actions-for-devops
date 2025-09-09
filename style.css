@@ -294,3 +294,61 @@ footer {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(12px); }
 }
+/* Extend gradient into About */
+.about-extended {
+  background: linear-gradient(135deg, #e78aff 0%, #ff99cc 50%, #c471ed 100%);
+  color: #fff0f6;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* Quote Style */
+.lana-quote {
+  margin: 40px auto;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #ffe6ff;
+  border-left: 4px solid #fff;
+  padding-left: 15px;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.stats div {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.stats div:hover {
+  transform: translateY(-8px);
+}
+
+.stats h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.stats p {
+  font-size: 1rem;
+  color: #ffe6ff;
+}
+
+/* Videos with 3 columns */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
