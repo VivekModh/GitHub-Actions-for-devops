@@ -31,7 +31,8 @@ Graduated from theory to practice: today I learned GitHub Actions and deployed a
    git clone https://github.com/VivekModh/GitHub-Actions-for-devops.git
    cd GitHub-Actions-for-devops
 
-
+2. Configure AWS Credentials
+Set the following secrets in your GitHub repository:
 AWS_ACCESS_KEY_ID
 AWS_SECRET_ACCESS_KEY
 AWS_REGION
