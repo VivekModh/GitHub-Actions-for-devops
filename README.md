@@ -42,7 +42,7 @@ cd GitHub-Actions-for-devops
 2. Configure AWS Credentials
 
 
-Set the following GitHub Secrets in your repository:
+2. Set the following GitHub Secrets in your repository:
 
 AWS_ACCESS_KEY_ID
 
